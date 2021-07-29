@@ -3,14 +3,20 @@
     justify-content: center;
 }
 
-.signup-content{
+/* .signup-content{ */
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    height: 80vh;
-}
+    /* height: 80vh; */
+/* } */
 
 
 .icon{
     margin-right: 20px;
+}
+.login-h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 input{
     border-top: none;
@@ -41,7 +47,7 @@ input[type=text] {
 }
 .signup-content{
     display: flex;
-    justify-content: space-around;
+     justify-content: space-around;
     align-items: center;
 }
 .form-group{
@@ -58,4 +64,120 @@ input[type=text] {
 .form-submit{
     border-bottom: none !important;
     background-color: #fff;
+}
+
+/* Home page start  */
+
+.navbar-brand{
+    font-size: 30px !important;
+    font-weight: 700;
+    /* text-decoration: none !important; */
+}
+.nav-link{
+    text-align: center;
+    border: none;
+    border: 2px solid #3c873a;
+    padding: 8px 30px !important;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login{
+    text-decoration: none !important;
+}
+.home-section{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 76vh;
+    
+}
+.home-section h2{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ font-weight: 700;
+}
+/* Home page  end */
+
+
+
+.sidenav-button{
+    text-align: center;
+    border: none;
+    border: 2px solid #3c873a;
+    padding: 8px 30px !important;
+    border-radius: 30px;
+    background-color: #fff !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.edit-profile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: none;
+    border: 2px solid #3c873a;
+    padding: 8px 30px !important;
+    border-radius: 30px;
+    background-color: #fff !important;
+    /* margin-left: 20px; */
+    margin-top: 10px !important;
+    margin-bottom: 20px;
+}
+.student-main{
+    display: flex;
+    justify-content: center;
+}
+.student-h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.dropdown-button{
+    margin-left: 1040px !important;
+}
+.main-edit{
+    display: flex;
+    justify-content: space-around;
+}
+.user-details{
+    display: flex;
+    justify-content: space-between;
+}
+.course-details{
+    padding: 20px 0 0 10px;
+}
+.userDetails-div{
+    margin: 20px 0 20px 10px
+}
+.userDetails-div h5 {
+    margin-bottom: 20px;
+}
+.edit-profile-button{
+    text-align: center;
+    border: none;
+    border: 2px solid #3c873a;
+    padding: 8px 30px !important;
+    border-radius: 30px;
+    background-color: #fff !important;
+    margin: 20px 10px 0 0;   
+}
+.main-edit-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.student-edit{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

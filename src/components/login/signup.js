@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import fire from "./auth/fireBase";
+import fire from "../auth/fireBase";
 
 
 export default function SignupPage() {

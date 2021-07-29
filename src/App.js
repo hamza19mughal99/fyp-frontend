@@ -1,11 +1,9 @@
-import Login from "./components/Login";
-import SignupPage from "./components/signup";
+import RouteConfig from "./components/RouteConfig";
 
 function App() {
   return (
     <>
-      <Login/>
-      <SignupPage/>
+      <RouteConfig/>
       </>
   );
 }
