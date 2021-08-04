@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import Carousel from 'react-bootstrap/Carousel';
+import logo from './images/logo.png';
+import slider5 from './images/slider5.jpg';
+import slider2 from './images/slider2.jpg';
+import slider4 from './images/slider4.jpg';
+
+
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,7 +36,14 @@ const Home = () => {
             {/* Navbar */}
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <Link className="login" to="/"><a class="navbar-brand" >PMP</a> </Link>
+                    <Link className="login" to="/"><a class="navbar-brand" >
+                        <img
+                            src={logo}
+                            width="180"
+                            height="100"
+                            className="d-inline-block align-top"
+                            alt="React Bootstrap logo"
+                        /></a> </Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -42,23 +58,49 @@ const Home = () => {
             </nav>
             {/* Navbar */}
 
-            {/* section one */}
-            
+            {/* slider */}
+            <Carousel fade>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={slider5}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h1>Welcome to SSUET</h1>
+
+                    </Carousel.Caption>
+
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100 "
+                        src={slider2}
+                        alt="Second slide"
+                    />
+
+                    {/* <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption> */}
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={slider4}
+                        alt="Third slide"
+                    />
+
+                    {/* <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption> */}
+                </Carousel.Item>
+            </Carousel>
 
 
-            <div className="home-section container">
 
-            <div className={classes.root}>
-                <Paper elevation={4} >
-                    <h2>PROGRESS MANAGEMENT PORTAL</h2>
-
-                </Paper>
-            </div>
-
-            </div>
-
-
-            {/* section one */}
+            {/* slider */}
 
 
         </>
