@@ -34,13 +34,13 @@ const Home = () => {
         <>
 
             {/* Navbar */}
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-whote">
                 <div class="container">
                     <Link className="login" to="/"><a class="navbar-brand" >
                         <img
                             src={logo}
-                            width="180"
-                            height="100"
+                            width="100"
+                            height="80"
                             className="d-inline-block align-top"
                             alt="React Bootstrap logo"
                         /></a> </Link>
